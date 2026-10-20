@@ -168,7 +168,7 @@ function editLesson(id,desiredDay,desiredSlot){
  fresh?d.lessons.push(rec):d.lessons=d.lessons.map(x=>x.id===id?rec:x);return commit(d)
  },fresh?null:()=>{let d=copy();d.lessons=d.lessons.filter(x=>x.id!==id);return commit(d)});
  const subjectInput=document.getElementById('f_subjectId'),teacherInput=document.getElementById('f_teacherId'),newSubjectWrap=document.getElementById('newSubjectWrap');
- const toggleNewSubject=()=>{if(newSubjectWrap)newSubjectWrap.style.display=subjectInput.value?'none':'';};
+ const toggleNewSubject=()=>{if(newSubjectWrap){newSubjectWrap.style.display=subjectInput.value?'none':'';if(subjectInput.value){const input=document.getElementById('f_newSubject');if(input)input.value='';}}};
  toggleNewSubject();
  const refreshTeachers=()=>{
   const previous=teacherInput.value;
