@@ -1,0 +1,12 @@
+{
+  "name": "LIMEGRID – Familien-Stundenplan",
+  "short_name": "LIMEGRID",
+  "description": "Offlinefähiger Stundenplan für mehrere Kinder",
+  "lang": "de",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0d1011",
+  "theme_color": "#c6ff35",
+  "icons": [{"src":"./icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]
+}
